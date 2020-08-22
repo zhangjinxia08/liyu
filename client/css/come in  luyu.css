@@ -90,3 +90,78 @@
 
 
 /* 公司介绍 */
+
+
+/* crubs */
+
+.h-row {
+    width: 100%;
+    height: 44px;
+}
+
+.crubs {
+    display: flex;
+    padding: 0 15px;
+    width: 1153px;
+    margin: 0 auto;
+    align-items: center;
+    height: 44px;
+    color: #AEAEAE;
+    font-size: 14px;
+}
+
+.crubs a {
+    color: #AEAEAE;
+    margin: 0 5px;
+}
+
+.crubs img {
+    width: 14px;
+    height: 14px;
+    margin-top: -3px;
+    margin-right: 5px;
+}
+
+
+/* 正文about */
+
+.h-title {
+    width: 100%;
+}
+
+.h-title .ly {
+    color: #337ab7;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    border-left: 2px solid #337ab7;
+}
+
+.about {
+    padding: 0 15px;
+    width: 1153px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    color: #333;
+}
+
+.companyName1 {
+    padding-top: 90px;
+    font-weight: bolder;
+    font-size: 16px;
+    color: #333;
+}
+
+.h-title p {
+    text-align: left;
+    line-height: 26px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.about img {
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+}
