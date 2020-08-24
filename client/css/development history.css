@@ -178,10 +178,38 @@
 }
 
 .info ul {
-    width: 2200px;
+    width: 220 0px;
+}
+
+.about02 .right:hover {
+    opacity: 1;
+    background-color: rgba(27, 98, 183, 1);
+    border: 1px solid rgba(27, 98, 183, 1);
+}
+
+.about02 .left:hover {
+    opacity: 1;
+    background-color: rgba(27, 98, 183, 1);
+    border: 1px solid rgba(27, 98, 183, 1);
 }
 
 .about02 li {
     float: left;
     /* text-align: center; */
 }
+
+.about02 li p {
+    color: rgba(27, 98, 183, 1);
+    font-size: 18px;
+    padding: 0 15px;
+    padding: 0 15px 15px 15px
+}
+
+.about02 li .txt p {
+    display: block;
+    font-size: 14px;
+    font-weight: 100;
+    color: rgba(102, 102, 102, 1);
+}
+
+.about02 .top {}
