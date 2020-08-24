@@ -98,7 +98,7 @@
         .crubs {
             display: flex;
             padding: 0 15px;
-            width: 1153px;
+            width: 1253px;
             margin: 0 auto;
             align-items: center;
             height: 44px;
@@ -123,7 +123,8 @@
             width: 100%;
             height: 1000px;
             position: relative;
-            margin-top: 200px;
+            margin-top: 600px;
+            opacity: 0;
         }
         
         .about02>div {
@@ -182,7 +183,7 @@
         
         .about02 .info {
             overflow: hidden;
-            width: 100%;
+            width: 1180px;
             position: absolute;
             height: 300px;
             top: -150px;
@@ -193,6 +194,7 @@
             height: 300px;
             position: relative;
             width: 2200px;
+            /* transition: all .5s; */
         }
         
         .about02 .right:hover {
