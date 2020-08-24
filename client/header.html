@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-content clearfix">
+            <div class="header-logo">
+                <!-- <img src="" alt=""> -->
+            </div>
+            <div class="header-right">
+                <div class="header-nav">
+                    <ul class="header-navlist clearfix">
+                        <!-- <li class="header-item"></li> -->
+                    </ul>
+                    <span class="header-slidebar"></span>
+                </div>
+                <div class="header-other">
+                    <ul class="clearfix">
+                        <li class="header-addition header-addition1">
+                            <a href="javascript:;" class="header-bg">中文</a>
+                            <ul class="header-lang">
+                                <li class="header-angle"></li>
+                                <li>
+                                    <a href="javascript:;">中文</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.liyupower.com/">English</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-addition">
+                            <a href="javascript:;" class="header-login header-bg">
+        
+                            </a>
+                        </li>
+                        <li class="header-addition">
+                            <a href="http://58.20.55.38:8089/seeyon/index.jsp" class="header-bg">OA</a>
+                        </li>
+                        <li class="header-addition header-addition2">
+                            <div class="search-box">
+                                <input type="text" class="header-ipt">
+                                <span>搜索</span>
+                            </div>
+                            <a href="javascript:;" class="header-search">
+                            </a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </div>
+   
+    <script src="./js/jquery.js"></script>
+    <script src="./js/request.js"></script>
+    <script src="./js/header.js"></script>
+    <script>
+
+        // fetch('http://172.16.5.104/users/header', {
+        //     method: 'get'
+        // }).then(res => res.json()).then(res => {
+        //     var headerItem = ''
+        //     var headerApproach = ''
+        //     var headerNews = ''
+        //     var headerProduct = ''
+        //     var headerCase = ''
+        //     var headerServer = ''
+        //     var headerContact = ''
+        //     res.forEach((item, index) => {
+        //         if (item.rank === 1) {      
+        //         headerItem += `
+        //             <li class="header-item">
+        //                 <a href="javascript:;" class="header-title${item.id}">${item.content}</a>    
+        //                 <ul class="header-list header-list${item.id}"></ul>    
+        //             </li>
+        //             `
+        //         } else if (item.rank === 2) {
+        //             headerApproach += `
+        //             <li class="header-pulldown">${item.content}</li>
+        //             `
+        //         }else if (item.rank === 3) {
+        //             headerNews += `
+        //             <li class="header-pulldown">${item.content}</li>
+        //             `
+        //         }
+        //         else if (item.rank === 4) {
+        //             headerProduct += `
+        //             <li class="header-pulldown">${item.content}</li>
+        //             `
+        //         }
+        //         else if (item.rank === 5) {
+        //             headerCase += `
+        //             <li class="header-pulldown">${item.content}</li>
+        //             `
+        //         }
+        //         else if (item.rank === 6) {
+        //             headerServer += `
+        //             <li class="header-pulldown">${item.content}</li>
+        //             `
+        //         }
+        //         else if (item.rank === 7) {
+        //             headerContact += `
+        //             <li class="header-pulldown">${item.content}</li>
+        //             `
+        //         }
+        //     })   
+        //     $('.header-navlist').html(headerItem)
+        //     $('.header-list2').html(headerApproach)
+        //     $('.header-list3').html(headerNews)
+        //     $('.header-list4').html(headerProduct)
+        //     $('.header-list5').html(headerCase)
+        //     $('.header-list6').html(headerServer)
+        //     $('.header-list7').html(headerContact)
+
+        // })
+
+        // fetch('http://172.16.5.104/users/pic', {
+        //     method: 'get'
+        // }).then(res => res.json()).then(res => {
+        //     var logo = ''
+        //     var login = ''
+        //     var search = ''
+        //     res.forEach((item, index) => {
+        //         if (item.order === 0) {
+        //             logo = ` <img src="${item.url}" alt="">`
+        //         }else if (item.order === 1) {
+        //             login = ` <img src="${item.url}" alt="">`
+        //         }else if (item.order === 2) {
+        //             search = ` <img src="${item.url}" alt="">`
+        //         }
+        //     })
+        //     $('.header-logo').html(logo)
+        //     $('.header-login').html(login)
+        //     $('.header-search').html(search)
+        // })
+       
+    </script>
+</body>
+
+</html>
