@@ -123,45 +123,65 @@
 }
 
 
-/* 正文about */
+/* 发展历程 */
 
-.h-title {
+.about02 {
     width: 100%;
+    height: 1000px;
+    margin-top: 200px;
 }
 
-.h-title .ly {
-    color: #337ab7;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding-left: 15px;
-    border-left: 2px solid #337ab7;
-}
-
-.about01 {
-    padding: 0 15px;
-    width: 1153px;
+.about02>div {
     margin: 0 auto;
-    padding-bottom: 20px;
-    color: #333;
+    width: 1153px;
+    padding: 0 15px;
+    position: relative;
 }
 
-.companyName1 {
-    padding-top: 90px;
-    font-weight: bolder;
-    font-size: 16px;
-    color: #333;
+.about02 .right {
+    width: 44px;
+    height: 44px;
+    background-color: #d7d7d7;
+    border-radius: 50%;
+    position: absolute;
+    top: -22px;
+    right: 0px;
 }
 
-.h-title p {
-    text-align: left;
-    line-height: 26px;
-    letter-spacing: 1px;
-    font-size: 14px;
-}
-
-.about01 img {
-    width: 100%;
-    margin-top: 20px;
+.right img,
+.left img {
+    width: 38px;
+    height: 38px;
     display: block;
+    margin: 0 auto;
+    transform: translateY(3px);
+}
+
+.about02 .left {
+    width: 44px;
+    border-radius: 50%;
+    height: 44px;
+    background-color: #d7d7d7;
+    position: absolute;
+    top: -22px;
+    left: 0px;
+}
+
+.about02 .line {
+    width: 100%;
+    height: 3px;
+    background-color: #d7d7d7;
+}
+
+.about02 .info {
+    height: 300px;
+}
+
+.info ul {
+    width: 2200px;
+}
+
+.about02 li {
+    float: left;
+    /* text-align: center; */
 }
