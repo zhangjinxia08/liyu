@@ -98,7 +98,7 @@
         .crubs {
             display: flex;
             padding: 0 15px;
-            width: 1253px;
+            width: 1238px;
             margin: 0 auto;
             align-items: center;
             height: 44px;
@@ -121,7 +121,7 @@
         
         .about02 {
             width: 100%;
-            height: 1000px;
+            /* height: 1000px; */
             position: relative;
             margin-top: 600px;
             opacity: 0;
@@ -129,7 +129,7 @@
         
         .about02>div {
             margin: 0 auto;
-            width: 1153px;
+            width: 1238px;
             padding: 0 15px;
             position: relative;
         }
