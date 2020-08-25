@@ -38,54 +38,64 @@
             <a href="">公司介绍</a>
         </div>
     </div>
+    <div id="cover">
+
+    </div>
+    <div id="box">
+        <div>
+            <a href="" id='btn'></a>
+            <img src="./images/timg.jpg" data-src="http://真正的图片地址/xxx.jpg">
+        </div>
+    </div>
     <div class="about04">
         <div>
             <ul>
                 <li>
-                    <div><img src="./images/ryzz01.jpg" alt=""></div>
+                    <div><img src="./images/ryzz01.jpg" alt="" index='0'></div>
                     <p>高新技术企业（2017-2020）</p>
                 </li>
                 <li>
-                    <div><img src="./images/ryzz02.jpg" alt=""></div>
+                    <div><img src="./images/ryzz02.jpg" alt="" index='1'></div>
                     <p>高新技术企业（2014-2017）</p>
                 </li>
                 <li>
-                    <div><img src="./images/ryzz03.jpg" alt=""></div>
+                    <div><img src="./images/ryzz03.jpg" alt="" index='2'></div>
                     <p>市工程技术研究中心牌匾</p>
                 </li>
                 <li>
-                    <div><img src="./images/ryzz04.jpg" alt=""></div>
+                    <div><img src="./images/ryzz04.jpg" alt="" index='3'></div>
                     <p>工信部登记证书</p>
                 </li>
                 <li>
-                    <div><img src="./images/ryzz05.jpg" alt=""></div>
+                    <div><img src="./images/ryzz05.jpg" alt="" index='4'></div>
                     <p>湖南省登记证书</p>
                 </li>
                 <li>
-                    <div><img src="./images/ryzz06.jpg" alt=""></div>
+                    <div><img src="./images/ryzz06.jpg" alt="" index='5'></div>
                     <p>长沙市科学技术进步奖三等奖荣誉证书</p>
                 </li>
                 <li>
-                    <div><img src="./images/ryzz07.jpg" alt=""></div>
+                    <div><img src="./images/ryzz07.jpg" alt="" index='6'></div>
                     <p>副会长单位牌匾</p>
                 </li>
                 <li>
-                    <div><img src="./images/ryzz08.jpg" alt=""></div>
+                    <div><img src="./images/ryzz08.jpg" alt="" index='7'></div>
                     <p>长沙高新区2016年度瞪羚企业</p>
                 </li>
                 <li>
-                    <div><img src="./images/ryzz09.jpg" alt=""></div>
+                    <div><img src="./images/ryzz09.jpg" alt="" index='8'></div>
                     <p>湖南力宇新能源产业规模过亿</p>
                 </li>
                 <li>
-                    <div><img src="./images/ryzz10.jpg" alt=""></div>
+                    <div><img src="./images/ryzz10.jpg" alt="" index='9'></div>
                     <p>华融商会会长单位</p>
                 </li>
                 <li>
-                    <div><img src="./images/ryzz11.jpg" alt=""></div>
+                    <div><img src="./images/ryzz11.jpg" alt="" index='10'></div>
                     <p>质量管理体系认证证书</p>
                 </li>
             </ul>
+
             <div class="page">
                 <a href="#"><img src="./images/about_04.png" alt=""></a>
                 <a href="./Honorary qualifications.html">1</a>
@@ -94,12 +104,36 @@
         </div>
     </div>
     <script src=" ./js/jquery.js "></script>
+    <script src="./js/underscore.js"></script>
+    <!-- <script src="./js/swiper.js"></script> -->
     <!-- <script>
         $(".tabs li ").on('mouseover', function() {
             $(this).addClass('active').siblings('.active').removeClass('active')
         })
     </script> -->
-    <script src="./js/02.js"></script>
+    <!-- <script src="./js/02.js"></script> -->
+    <script>
+        var dataSrc = ['./images/ryzz01.jpg', './images/ryzz02.jpg',
+            './images/ryzz03.jpg', './images/ryzz04.jpg', './images/ryzz05.jpg',
+            './images/ryzz06.jpg', './images/ryzz07.jpg', './images/ryzz08.jpg',
+            './images/ryzz09.jpg', './images/ryzz10.jpg', './images/ryzz11.jpg',
+
+        ]
+        $('.about04 img').on('click', function() {
+            // $('#cover').css({
+            //     display: 'block'
+            // })
+            console.log($(this).attr('index'))
+        })
+        $('#cover').on('click', function() {
+            $('#cover').css({
+                display: 'none'
+            })
+            $('#box').css({
+                display: 'none'
+            })
+        })
+    </script>
 </body>
 
 </html>

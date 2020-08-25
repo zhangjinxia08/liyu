@@ -1,3 +1,9 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
 .h-banner {
     width: 100%;
     margin-top: 90px;
@@ -207,4 +213,39 @@
     background-color: rgba(27, 98, 183, 1);
     color: #fff;
     border-color: rgba(27, 98, 183, 1);
+}
+
+
+/*  */
+
+#cover {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+#box {
+    width: 800px;
+    height: 566px;
+    border: 7px solid #333;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+}
+
+#box img {
+    width: 800px;
+    height: 566px;
+    display: block;
 }
