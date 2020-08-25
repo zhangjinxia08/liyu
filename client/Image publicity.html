@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>形象宣传</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/Image publicity.css">
+</head>
+
+
+<body>
+    <div class="h-banner">
+        <a href=""><img src="./images/jiesao01.jpg" alt=""></a>
+        <div class="tit">
+            <p>- 走进力宇 -</p>
+            <p>力宇集团以新能源发展为核心，产品服务遍布全球</p>
+        </div>
+    </div>
+    <div class="tabs">
+        <ul>
+            <li class="active act"><a href="./come in liyu.html">公司介绍</a><span>/</span></li>
+            <li><a href="./development history.html">发展历程</a><span>/</span></li>
+            <li><a href="./corporate culture.html">企业文化</a><span>/</span></li>
+            <li><a href="">荣誉资历</a><span>/</span></li>
+            <li><a href="">员工风采</a><span>/</span></li>
+            <li><a href="./Image publicity.html">形象宣传</a></li>
+        </ul>
+    </div>
+    <div class="h-row">
+        <div class="crubs">
+            <img src="./images/header_03.png" alt="">
+            <a href="javascript:;">首页</a>
+            <span> >> </span>
+            <a href="">走进力宇</a>
+            <span> >> </span>
+            <a href="">公司介绍</a>
+        </div>
+    </div>
+    <div class="about06">
+        <div>
+            <p class="txt">形象宣传</p>
+            <video src="./images/1569548817115569.mp4" controls></video>
+        </div>
+    </div>
+    <script src=" ./js/jquery.js "></script>
+    <script>
+        $(".tabs li ").on('mouseover', function() {
+            $(this).addClass('active').siblings('.active').removeClass('active')
+        })
+    </script>
+</body>
+
+</html>
