@@ -44,26 +44,30 @@ window.onload = function() {
     // 荣誉资历
     //轮播
 var mySwiper = new Swiper('.swiper-container', {
-    autoplay: true, //可选选项，自动滑动
-    loop: true,
-    initialSlide: 2,
-    pagination: ".swiper-dots",
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    // effect: 'coverflow',
-    // slidesPerView: 3,
-    // centeredSlides: true,
-    // coverflowEffect: {
-    //     rotate: 30,
-    //     stretch: 10,
-    //     depth: 60,
-    //     modifier: 2,
-    //     slideShadows: true
-    // },
-    effect: 'fade',
-})
+        autoplay: true, //可选选项，自动滑动
+        loop: true,
+        centeredSlides: true,
+        effect: 'cube',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+    // var swiper = new Swiper('.swiper-container', {
+    //     loop: true,
+    //     pagination: '.swiper-pagination',
+    //     effect: 'coverflow',
+    //     grabCursor: true,
+    //     centeredSlides: true,
+    //     nextButton: '.swiper-button-next',
+    //     prevButton: '.swiper-button-prev',
+    //     slidesPerView: 'auto',
+    //     coverflow: {
+    //         rotate: 0, // 旋转的角度
+
+//         modifier: 3, // 修正值 该值越大前面的效果越明显
+//         slideShadows: false // 页面阴影效果
+//     },
+//     spaceBetween: 20
+
+// });
