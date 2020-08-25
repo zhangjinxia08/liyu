@@ -1,4 +1,4 @@
-var mg = $('.about02 ul').css('marginLeft')
+// var mg = $('.about02 ul').css('marginLeft')
 $(".tabs li ").on('mouseover', function() {
     $(this).addClass('active').siblings('.active').removeClass('active')
 })
@@ -36,8 +36,34 @@ $('.about02 .left').on('click', $('.about02 ul'), function() {
     }
 })
 window.onload = function() {
-    $('.about02').stop().animate({
-        opacity: 1,
-        marginTop: 200
-    }, 1000)
-}
+        $('.about02').stop().animate({
+            opacity: 1,
+            marginTop: 200
+        }, 1000)
+    }
+    // 荣誉资历
+    //轮播
+var mySwiper = new Swiper('.swiper-container', {
+    autoplay: true, //可选选项，自动滑动
+    loop: true,
+    initialSlide: 2,
+    pagination: ".swiper-dots",
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    // effect: 'coverflow',
+    // slidesPerView: 3,
+    // centeredSlides: true,
+    // coverflowEffect: {
+    //     rotate: 30,
+    //     stretch: 10,
+    //     depth: 60,
+    //     modifier: 2,
+    //     slideShadows: true
+    // },
+    effect: 'fade',
+})
