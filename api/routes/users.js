@@ -8,8 +8,9 @@ router.all('*', function(req, res, next) {
     next()
 })
 
-router.get('/come-in-liyu', function(req, res, next) {
-    res.render('come-in-liyu.html', {})
+// router.get('/come-in-liyu.html', function(req, res, next) {
+//     res.render('./A-come-in-liyu.html', {})
+//         // res.send('666')
 
-})
+// })
 module.exports = router;

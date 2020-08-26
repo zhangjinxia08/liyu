@@ -5,15 +5,16 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('myapp:server');
+var debug = require('debug')('app:server');
 var http = require('http');
 
 /**
  * Get port from environment and store in Express.
  */
-
-var port = normalizePort(process.env.PORT || '3000');
+// 修改接口
+var port = normalizePort(process.env.PORT || '80');
 app.set('port', port);
+// app.set('172.16.5.103')
 
 /**
  * Create HTTP server.

@@ -1,6 +1,5 @@
 .h-banner {
     width: 100%;
-    margin-top: 90px;
     position: relative;
 }
 
@@ -121,7 +120,7 @@
     position: relative;
     bottom: -500px;
     opacity: 0;
-    /* margin-bottom: 32px; */
+    margin-bottom: 32px;
 }
 
 .about05>div {
