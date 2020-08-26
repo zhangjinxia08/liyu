@@ -118,6 +118,9 @@
 
 .about05 {
     width: 100%;
+    position: relative;
+    bottom: -500px;
+    opacity: 0;
     /* margin-bottom: 32px; */
 }
 

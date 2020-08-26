@@ -122,8 +122,11 @@ html {
     margin-right: 5px;
 }
 
-.about06 {
+.about04 {
     width: 100%;
+    position: relative;
+    bottom: -500px;
+    opacity: 0;
 }
 
 .about04>div {

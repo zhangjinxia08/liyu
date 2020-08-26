@@ -43,12 +43,9 @@
     </div>
     <div id="box">
         <div>
-            <p id='btn'></p>
-            <p id="btn-left"></p>
-            <p id="btn-right"></p>
-            <!-- <a href="./Honorary qualifications.html" id='btn'></a> -->
-            <!-- <a href="" id="btn-left"></a>
-            <a href="" id="btn-right"></a> -->
+            <span id='btn'></span>
+            <span id="btn-left"></span>
+            <sapn id="btn-right"></sapn>
             <img src="./images/timg.jpg" data-src="http://真正的图片地址/xxx.jpg">
         </div>
     </div>
@@ -118,6 +115,13 @@
     </script> -->
     <!-- <script src="./js/02.js"></script> -->
     <script>
+        window.onload = function() {
+            $('.about04').animate({
+                bottom: 0,
+                opacity: 1
+            }, 1000)
+
+        }
         var dataSrc = ['./images/ryzz01.jpg', './images/ryzz02.jpg',
             './images/ryzz03.jpg', './images/ryzz04.jpg', './images/ryzz05.jpg',
             './images/ryzz06.jpg', './images/ryzz07.jpg', './images/ryzz08.jpg',
@@ -126,31 +130,46 @@
         ]
         $('.about04 img').on('click', function() {
             var aaa = $(this).attr('index')
+            $('#btn-right').on('click', function() {
+
                 // console.log(aaa)
+
+                $('#box img').attr('src', dataSrc[++aaa])
+                console.log(aaa)
+                if (aaa === 11) {
+                    aaa = 0
+                    $('#box img').attr('src', dataSrc[0])
+                }
+            })
+            $('#btn-left').on('click', function() {
+
+                // console.log(aaa)
+
+                $('#box img').attr('src', dataSrc[--aaa])
+                console.log(aaa)
+                if (aaa === 0) {
+                    aaa = 10
+                    $('#box img').attr('src', dataSrc[10])
+                }
+            })
             $('#cover').css({
                 display: 'block'
             })
             $('#box').css({
                 display: 'block',
-                // top: '50%',
-                // width: 800,
-                // height: 566
             })
             $("#box").stop().animate({
                 top: '60%',
                 width: 900,
                 height: 666
-            }, function() {
+            }, 600, function() {
                 $("#box").stop().animate({
-                        top: '50%',
-                        width: 800,
-                        height: 566
-                    })
-                    // console.log($("#box").css('width'))
+                    top: '50%',
+                    width: 800,
+                    height: 566
+                })
                 if ($("#box").css('width') === '900px') {
-                    // console.log($(this).attr('index'))
-                    // console.log(dataSrc[aaa])
-                    // console.log($('#box img').attr('src'))
+
                     $('#box img').attr('src', dataSrc[aaa])
                 }
             })
@@ -185,4 +204,4 @@
     </script>
 </body>
 
-</html>
+</html
