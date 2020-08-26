@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/service.css">
+</head>
+
+<body>
+
+    <div class="c-top">
+        <div class="c-top1">
+            <img src="./images/01.jpg" alt="">
+        </div>
+        <div class="c-top2">
+            <p>- 服务支持 -</p>
+            <p>力宇集团以新能源发展为核心，产品服务遍布全球</p>
+        </div>
+    </div>
+
+    <div class="c-tab">
+        <a href="./service.html">技术支持</a>
+        <span>/</span>
+        <a href="./ser-xiaoshou.html"
+            style="padding-bottom: 18px;font-weight: 600;color: #1b62b7;border-bottom: #1b62b7 solid 3px;">销售网络</a>
+        <span>/</span>
+        <a href="./ser-shouhou.html">售后服务</a>
+        <span>/</span>
+        <a href="./ser-peijian.html">配件支持</a>
+        <span>/</span>
+        <a href="./ser-wenti.html">常见问题</a>
+        <span>/</span>
+        <a href="./ser-ziliao.html">资料下载</a>
+    </div>
+
+    <div class="c-wrap">
+
+        <div class="c-con1">
+            <img src="./images/header_03.png" alt="">
+            <a href="">首页</a> >>
+            <a href="./service.html">服务支持</a> >>
+            <a href="./service.html">销售网络</a>
+        </div>
+        <div class="c-content">
+
+            <div class="c-tit">
+                销售网络
+            </div>
+            <div class="c-titles">
+                <p class="c-tits">营销中心国内市场下设五个大区（北部、东部、西部、南部、山西）。</p>
+                <img src="./images/sale.jpg" alt="">
+                <!-- ------------------------- -->
+                <div class="c-spot1 spots">
+                    <img src="./images/spot_icon.png" alt="" class="c-img1">
+                    <div class="c-map">
+                        <p>北部大区管辖</p>
+                        <p>北京、天津、河北、黑龙江、吉林、辽宁、内蒙古、新疆、甘肃、青海、宁夏，共计11个省级行政区，区域网点设北京，田萌担任区域经理</p>
+                        <a class="c-a1">X</a>
+                    </div>
+                </div>
+                <!-- ------------------------- -->
+                <div class="c-spot2 spots">
+                    <img src="./images/spot_icon.png" alt="" class="c-img1">
+                    <div class="c-map">
+                        <p>山西特区管辖</p>
+                        <p>山西省，网点山西晋城，田萌担任区域经理</p>
+                        <a class="c-a1">X</a>
+                    </div>
+                </div>
+                <!-- ------------------------- -->
+                <div class="c-spot3 spots">
+                    <img src="./images/spot_icon.png" alt="" class="c-img1">
+                    <div class="c-map">
+                        <p>西部大区管辖</p>
+                        <p>西藏、云南、贵州、四川、重庆、陕西，共计6个省级行政区，区域网点设四川成都，刘友发担任区域经理</p>
+                        <a class="c-a1">X</a>
+                    </div>
+                </div>
+                <!-- ------------------------- -->
+                <div class="c-spot4 spots">
+                    <img src="./images/spot_icon.png" alt="" class="c-img1">
+                    <div class="c-map">
+                        <p>东部大区管辖</p>
+                        <p>山东、河南、江苏、浙江、上海、安徽，共计6个省级行政区，区域网点江苏无锡，李欣担任区域经理</p>
+                        <a class="c-a1">X</a>
+                    </div>
+                </div>
+                <!-- ------------------------- -->
+                <div class="c-spot5 spots">
+                    <img src="./images/spot_icon.png" alt="" class="c-img1">
+                    <div class="c-map">
+                        <p>南部大区管辖</p>
+                        <p>湖南、湖北、江西、福建、广东、广西、海南、澳门、香港，共计9个省级行政区，区域网点暂设深圳，张雯婷担任区域经理</p>
+                        <a class="c-a1">X</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script>
+        // function(){$(this).next('.c-map').removeAttr("opacity")}
+        $(function () {
+            $('.c-img1').on('click', function () {
+                $(this).next('.c-map').addClass('active').parent().siblings('.spots').children('.active').removeClass('active')
+                $(this).next('.c-map').animate({
+                    opacity: 1
+                }, 1000,)
+            })
+            $(".c-a1").on("click", function () {
+                $(this).parent('.c-map').removeAttr("style")
+                $(this).parent(".active").removeClass('active')
+                $(this).parent(".active").animate({
+                    opacity: 0
+                }, 1000,)
+            })
+        })
+    </script>
+
+</body>
+
+</html>
