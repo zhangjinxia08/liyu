@@ -43,7 +43,12 @@
     </div>
     <div id="box">
         <div>
-            <a href="" id='btn'></a>
+            <p id='btn'></p>
+            <p id="btn-left"></p>
+            <p id="btn-right"></p>
+            <!-- <a href="./Honorary qualifications.html" id='btn'></a> -->
+            <!-- <a href="" id="btn-left"></a>
+            <a href="" id="btn-right"></a> -->
             <img src="./images/timg.jpg" data-src="http://真正的图片地址/xxx.jpg">
         </div>
     </div>
@@ -120,18 +125,62 @@
 
         ]
         $('.about04 img').on('click', function() {
-            // $('#cover').css({
-            //     display: 'block'
-            // })
-            console.log($(this).attr('index'))
+            var aaa = $(this).attr('index')
+                // console.log(aaa)
+            $('#cover').css({
+                display: 'block'
+            })
+            $('#box').css({
+                display: 'block',
+                // top: '50%',
+                // width: 800,
+                // height: 566
+            })
+            $("#box").stop().animate({
+                top: '60%',
+                width: 900,
+                height: 666
+            }, function() {
+                $("#box").stop().animate({
+                        top: '50%',
+                        width: 800,
+                        height: 566
+                    })
+                    // console.log($("#box").css('width'))
+                if ($("#box").css('width') === '900px') {
+                    // console.log($(this).attr('index'))
+                    // console.log(dataSrc[aaa])
+                    // console.log($('#box img').attr('src'))
+                    $('#box img').attr('src', dataSrc[aaa])
+                }
+            })
+
+            // console.log(aaa)
+
         })
         $('#cover').on('click', function() {
             $('#cover').css({
                 display: 'none'
             })
             $('#box').css({
+                display: 'none',
+                top: 0,
+                width: 300,
+                height: 366
+            })
+            $('#box img').attr('src', "./images/timg.jpg")
+        })
+        $('#btn').on('click', function() {
+            $('#box').css({
+                display: 'none',
+                top: 0,
+                width: 300,
+                height: 366
+            })
+            $('#cover').css({
                 display: 'none'
             })
+            $('#box img').attr('src', "./images/timg.jpg")
         })
     </script>
 </body>
