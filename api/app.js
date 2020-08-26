@@ -1,9 +1,10 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
+var ejs = require('ejs')
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var ejs = require('ejs')
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -11,9 +12,8 @@ var app = express();
 
 // view engine setup
 app.engine('html', ejs.__express)
-    // app.use(express.static('staic'))
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '../client'));
+app.set('view engine', 'html');
 
 app.use(logger('dev'));
 app.use(express.json());
