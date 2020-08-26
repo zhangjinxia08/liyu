@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专利证书-力宇集团-官网</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+</head>
+
+<body>
+
+    <div class="c-top">
+        <div class="c-top1">
+            <img src="./images/1566870036438398.jpg" alt="">
+        </div>
+        <div class="c-top2">
+            <p>- 产品中心 -</p>
+            <p>力宇集团以新能源发展为核心，产品服务遍布全球</p>
+        </div>
+    </div>
+
+    <div class="c-tab">
+        <a href="./product.html">产品汇总</a>
+        <span>/</span>
+        <a href="./product-zhengshu.html"
+            style="padding-bottom: 18px;font-weight: 600;color: #1b62b7;border-bottom: #1b62b7 solid 3px;">专利证书</a>
+        <span>/</span>
+        <a href="./product-chengguo.html">科研成果</a>
+    </div>
+
+    <div class="c-wrap">
+
+        <div class="c-con1">
+            <img src="./images/header_03.png" alt="">
+            <a href="">首页</a> >>
+            <a href="./product.html">产品中心</a> >>
+            <a href="./product-zhengshu.html">专利证书</a>
+        </div>
+        <div class="c-content">
+
+            <div class="c-zshu1a">
+                <div class="c-zshu2">
+                    <a href="javascript:void(0)" class="c-zsimg"><img src="./images/1566913682624600.jpg" alt=""></a>
+                    <p>发明专利 一种阻抗复合式排气消音器</p>
+                </div>
+                <div class="c-zshu2">
+                    <a href="javascript:void(0)" class="c-zsimg"><img src="./images/1566913682624600.jpg" alt=""></a>
+                    <p>发明专利 一种阻抗复合式排气消音器</p>
+                </div>
+                <div class="c-zshu2">
+                    <a href="javascript:void(0)" class="c-zsimg"><img src="./images/1566913682624600.jpg" alt=""></a>
+                    <p>发明专利 一种阻抗复合式排气消音器</p>
+                </div>
+            </div>
+
+            <div class="c-page1">
+                <a href="./product-zhengshu-2.html"><img src="./images/about_04.png" alt=""></a>
+                <a href="./product-zhengshu.html">1</a>
+                <a href="./product-zhengshu-2.html">2</a>
+                <a href="./product-zhengshu-3.html" style="background-color: #1b62b7;">3</a>
+                <a><img src="./images/about_05.png"></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="light" class="white_content">
+        <a href="javascript:void(0)" class="c-book"></a>
+    </div>
+    <div id="fade" class="black_overlay"></div>
+
+    <script src="./js/jquery.js"></script>
+    <script>
+
+        $(function () {
+
+            $(".c-zshu2 .c-zsimg").on("click", function () {
+                $("#light").css("display", "block")
+                $("#fade").css("display", "block")
+                $("#light").animate({
+                    opacity: 1,
+                    top: "100px"
+                }, 500, function () {
+                    $("#light").stop().animate({
+                        top: "50px"
+                    })
+                })
+                console.log($(".c-zshu2 .c-zsimg"))
+                // function(){$("#light").removeAttr("style")}
+            })
+            $(".c-book").on("click", function () {
+                // $("#light").removeAttr("style")
+                $("#light").css("display", "none")
+                $("#fade").css("display", "none")
+            })
+        })
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

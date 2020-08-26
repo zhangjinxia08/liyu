@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>科研成果-力宇集团-官网</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/product.css">
     <link rel="stylesheet" href="./css/swiper.css">
@@ -25,50 +26,54 @@
     <div class="c-tab">
         <a href="./product.html">产品汇总</a>
         <span>/</span>
-        <a href="./pro-zhengshu.html" style="padding-bottom: 18px;font-weight: 600;color: #1b62b7;border-bottom: #1b62b7 solid 3px;">专利证书</a>
+        <a href="./product-zhengshu.html">专利证书</a>
         <span>/</span>
-        <a href="./pro-chengguo.html">科研成果</a>
+        <a href="./product-chengguo.html"
+            style="padding-bottom: 18px;font-weight: 600;color: #1b62b7;border-bottom: #1b62b7 solid 3px;">科研成果</a>
     </div>
 
-    <div class="c-wrap">
+    <div class="c-wraps">
 
         <div class="c-con1">
             <img src="./images/header_03.png" alt="">
             <a href="">首页</a> >>
             <a href="./product.html">产品中心</a> >>
-            <a href="./pro-zhengshu.html">专利证书</a>
+            <a href="./product-chengguo.html">科研成果</a>
         </div>
-        <div class="c-content">
+        <div class="c-contents">
 
-            <div class="c-zshu1a">
-                <div class="c-zshu2">
-                    <a href="javascript:void(0)" class="c-zsimg"><img src="./images/1566913682624600.jpg" alt=""></a>
+            <div class="c-zshu4">
+                <div class="c-zshu3">
+                    <a href="javascript:void(0)" class="c-zsimg"><img src="./images/1566959886680683.jpg" alt=""></a>
                     <p>发明专利 一种阻抗复合式排气消音器</p>
                 </div>
-                <div class="c-zshu2">
-                    <a href="javascript:void(0)" class="c-zsimg"><img src="./images/1566913682624600.jpg" alt=""></a>
+                <div class="c-zshu3">
+                    <a href="javascript:void(0)" class="c-zsimg"><img src="./images/1566959886680683.jpg" alt=""></a>
                     <p>发明专利 一种阻抗复合式排气消音器</p>
                 </div>
-                <div class="c-zshu2">
-                    <a href="javascript:void(0)" class="c-zsimg"><img src="./images/1566913682624600.jpg" alt=""></a>
+                <div class="c-zshu3">
+                    <a href="javascript:void(0)" class="c-zsimg"><img src="./images/1566959886680683.jpg" alt=""></a>
+                    <p>发明专利 一种阻抗复合式排气消音器</p>
+                </div>
+                <div class="c-zshu3">
+                    <a href="javascript:void(0)" class="c-zsimg"><img src="./images/1566959886680683.jpg" alt=""></a>
                     <p>发明专利 一种阻抗复合式排气消音器</p>
                 </div>
             </div>
 
             <div class="c-page1">
-                <a href="./pro-zhengshu-2.html"><img src="./images/about_04.png" alt=""></a>
-                <a href="./pro-zhengshu.html">1</a>
-                <a href="./pro-zhengshu-2.html">2</a>
-                <a href="./pro-zhengshu-3.html" style="background-color: #1b62b7;">3</a>
-                <a ><img src="./images/about_05.png" ></a>
+                <a><img src="./images/about_04.png" alt=""></a>
+                <a href="./product-chengguo.html" style="background-color: #1b62b7;">1</a>
+                <a><img src="./images/about_05.png" alt=""></a>
             </div>
 
         </div>
 
     </div>
 
-    <div id="light" class="white_content">
-        <a href="javascript:void(0)" class="c-book"></a>
+
+    <div id="light" class="white_content2">
+        <a href="javascript:void(0)" class="c-book2"></a>
     </div>
     <div id="fade" class="black_overlay"></div>
 
@@ -76,8 +81,8 @@
     <script>
 
         $(function () {
-            
-            $(".c-zshu2 .c-zsimg").on("click", function () {
+
+            $(".c-zshu3 .c-zsimg").on("click", function () {
                 $("#light").css("display", "block")
                 $("#fade").css("display", "block")
                 $("#light").animate({
@@ -88,16 +93,15 @@
                         top: "50px"
                     })
                 })
-                console.log($(".c-zshu2 .c-zsimg"))
+                console.log($(".c-zshu3 .c-zsimg"))
                 // function(){$("#light").removeAttr("style")}
             })
-            $(".c-book").on("click", function () {
+            $(".c-book2").on("click", function () {
                 // $("#light").removeAttr("style")
                 $("#light").css("display", "none")
                 $("#fade").css("display", "none")
             })
         })
-
 
     </script>
 
