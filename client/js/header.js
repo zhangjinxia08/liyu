@@ -76,7 +76,7 @@ $headerNavlist.on('click','.header-title10',function(){
     location.href = './A-corporate-culture.html'
 })
 $headerNavlist.on('click','.header-title11',function(){
-    location.href = './A-Honorary-qualification.html'
+    location.href = './A-Honorary-qualifications.html'
 })
 $headerNavlist.on('click','.header-title12',function(){
     location.href = './A-Staff-style.html'
