@@ -388,7 +388,7 @@
     bottom: 0;
 }
 
-.c-zshu2 :hover .c-zsimg {
+.c-zshu2 :hover .c-aimg {
     transform: scale(1.1);
     transition: all 0.5s;
 }
@@ -565,7 +565,7 @@
     bottom: 0;
 }
 
-.c-zshu3 :hover .c-zsimg {
+.c-zshu3  :hover .c-aimg {
     transform: scale(1.1);
     transition: all 0.5s;
 }

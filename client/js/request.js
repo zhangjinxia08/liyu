@@ -1,4 +1,4 @@
-fetch('http://172.16.5.103/users/header', {
+fetch('http://172.16.5.102/users/header', {
     method: 'get'
 }).then(res => res.json()).then(res => {
     var headerItem = ''
@@ -91,7 +91,7 @@ fetch('http://172.16.5.103/users/header', {
 
 })
 
-fetch('http://172.16.5.103/users/pic', {
+fetch('http://172.16.5.102/users/pic', {
     method: 'get'
 }).then(res => res.json()).then(res => {
     var logo = ''
