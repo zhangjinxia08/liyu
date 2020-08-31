@@ -34,11 +34,11 @@ router.post('/login', function(req, res, next) {
     if(err) {
       console.log(err)
     } else {
-      res.send({
-        code: 1,
-        usersArr: data,
-        msg: "success"
-      })
+      // res.send({
+      //   code: 1,
+      //   usersArr: data,
+      //   msg: "success"
+      // })
       
       res.render('index')
     }
@@ -70,6 +70,20 @@ router.get('/website', function(req, res, next) {
         code: 1,
         addressArr: data,
         msg: "success"
+      })
+    }
+  })
+})
+
+router.post('/regist', function(req, res, next) {
+  var sql = `insert into userinsert (username, email, tel, words) values('${req.body.username}', '${req.body.email}', '${req.body.tel}', '${req.body.words}')`
+  connection.query(sql, function(err, data) {
+    if(err) {
+      console.log(err)
+    } else {
+      res.send({
+        code: 1,
+        mag: 'success'
       })
     }
   })

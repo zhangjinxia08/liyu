@@ -41,14 +41,25 @@ $(function() {
 $('.gchange').on('click', function() {
     if($('form input').val() === '') {
         alert('验证码不能为空！')
-    } else {
+    } else if($('#tel').val() === '') {
         alert('验证码不能错误！')
     }
 })
 
-// $('.tab_item a').on('click', function(e) {
-//     var e = e || window.event
-//     e.preventDefault()
-//     $(location).attr('href', 'E:/project/liyu/client/join.html') 
-//     $(location).attr('href', 'E:/project/liyu/client/website.html') 
-// })
+$('form').on('submit', function(e) {
+    var e = e || window.event
+    e.preventDefault()
+    $.ajax({
+        url: 'http://localhost:80/users/regist',
+        type: 'post',
+        data: {
+            username: $('#username').val(),
+            email: $('#e-mail').val(),
+            tel: $('#tel').val(),
+            words: $('#words').val()
+        },
+        success: function(res) {
+            alert('提交成功')
+        }
+    })
+})
