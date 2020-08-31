@@ -1,6 +1,5 @@
 html {
     color: #000;
-    background: #FFF;
 }
 body,
 div,
@@ -52,7 +51,8 @@ var {
     font-weight: normal;
 }
 ol,
-ul {
+ul,
+li {
     list-style: none;
 }
 caption,
