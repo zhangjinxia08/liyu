@@ -1,4 +1,4 @@
-fetch('http://172.16.5.101/users/header', {
+fetch('http://172.16.5.102/users/header', {
     method: 'get'
 }).then(res => res.json()).then(res => {
     var footerItem = ''
@@ -9,7 +9,7 @@ fetch('http://172.16.5.101/users/header', {
     var footerServer = ''
     var footerContact = ''
     res.forEach((item, index) => {
-        if (item.rank === 1 && item.id !== 1) {      
+        if (item.rank === 1 && item.id !== 1) {
             footerItem += `
             <li class="footer-item">
                 <a href="javascript:;" class="header-title${item.id}">${item.content}</a>    
@@ -20,32 +20,28 @@ fetch('http://172.16.5.101/users/header', {
             footerApproach += `
             <li class="footer-pulldown header-title${item.id}">${item.content}</li>
             `
-        }else if (item.rank === 3) {
+        } else if (item.rank === 3) {
             footerNews += `
             <li class="footer-pulldown header-title${item.id}">${item.content}</li>
             `
-        }
-        else if (item.rank === 4) {
+        } else if (item.rank === 4) {
             footerProduct += `
             <li class="footer-pulldown header-title${item.id}">${item.content}</li>
             `
-        }
-        else if (item.rank === 5) {
+        } else if (item.rank === 5) {
             footerCase += `
             <li class="footer-pulldown header-title${item.id}">${item.content}</li>
             `
-        }
-        else if (item.rank === 6) {
+        } else if (item.rank === 6) {
             footerServer += `
             <li class="footer-pulldown header-title${item.id}">${item.content}</li>
             `
-        }
-        else if (item.rank === 7) {
+        } else if (item.rank === 7) {
             footerContact += `
             <li class="footer-pulldown header-title${item.id}">${item.content}</li>
             `
         }
-    })   
+    })
     $('.footer-navlist').html(footerItem)
     $('.footer-list2').html(footerApproach)
     $('.footer-list3').html(footerNews)
@@ -55,7 +51,7 @@ fetch('http://172.16.5.101/users/header', {
     $('.footer-list7').html(footerContact)
 
 })
-fetch('http://172.16.5.101/users/pic', {
+fetch('http://172.16.5.103/users/pic', {
     method: 'get'
 }).then(res => res.json()).then(res => {
     var website = ''
@@ -69,16 +65,16 @@ fetch('http://172.16.5.101/users/pic', {
             <img src="${item.url}" alt="">
             <p>${item.title}</p
             `
-        }else if (item.order === 5) {
+        } else if (item.order === 5) {
             footerPublic = ` 
             <img src="${item.url}" alt="">
             <p>${item.title}</p
             `
-        }else if (item.order === 6) {
+        } else if (item.order === 6) {
             footerAddress = ` <img src="${item.url}" alt="">`
-        }else if (item.order === 7) {
+        } else if (item.order === 7) {
             footerTel = ` <img src="${item.url}" alt="">`
-        }else if (item.order === 8) {
+        } else if (item.order === 8) {
             statistic = ` <img src="${item.url}" alt="">`
         }
     })

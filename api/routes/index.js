@@ -1,29 +1,64 @@
 var express = require('express');
 var router = express.Router();
 var { connection } = require('../db/database')
-router.all('*',function(req,res,next) {
-  res.header('Access-Control-Allow-Origin','*');
-  res.header('Access-Control-Allow-Origin','*');
-  next()
-})
-/* GET home page. */
-// router.get('/', function(req, res, next) {
-//   res.render('index', { title: 'Express' });
-// });
-// 页面跳转请求接口
+router.all('*', function(req, res, next) {
+        res.header('Access-Control-Allow-Origin', '*');
+        res.header('Access-Control-Allow-Origin', '*');
+        next()
+    })
+    /* GET home page. */
+    // router.get('/', function(req, res, next) {
+    //   res.render('index', { title: 'Express' });
+    // });
+    // 页面跳转请求接口
 router.get('/case', function(req, res, next) {
-  res.render('./case.html', {});
+    res.render('./case.html', {});
 });
 router.get('/case-customer', function(req, res, next) {
-  res.render('./case-customer.html', {});
+    res.render('./case-customer.html', {});
 });
 router.get('/case-partner', function(req, res, next) {
-  res.render('./case-partner.html', {});
+    res.render('./case-partner.html', {});
 });
 router.get('/case-invest', function(req, res, next) {
-  res.render('./casecase-invest.html', {});
+    res.render('./casecase-invest.html', {});
 });
 router.get('/case-detail', function(req, res, next) {
-  res.render('./case-detail.html', {});
+    res.render('./case-detail.html', {});
 });
+module.exports = router;
+router.all('*', function(req, res, next) {
+        res.header('Access-Control-Allow-Origin', '*');
+        res.header('Access-Control-Allow-Origin', '*');
+        next()
+    })
+    /* GET home page. */
+    // router.get('/', function(req, res, next) {
+    //   res.render('index', { title: 'Express' });
+    // });
+router.get('/A-come-in-liyu.html', function(req, res, next) {
+    res.render('./A-come-in-liyu.html', {})
+        // res.send('666')
+
+})
+router.get('/A-corporate-culture.html', function(req, res, next) {
+    res.render('./A-corporate-culture.html', {})
+        // res.send('666')
+
+})
+router.get('/A-development-history.html', function(req, res, next) {
+    res.render('./A-development-history.html', {})
+        // res.send('666')
+
+})
+router.get('/A-Honorary-qualifications.html', function(req, res, next) {
+    res.render('./A-Honorary-qualifications.html', {})
+        // res.send('666')
+
+})
+router.get('/A-Image-publicity.html', function(req, res, next) {
+    res.render('./A-Image-publicity.html', {})
+        // res.send('666')
+
+})
 module.exports = router;
