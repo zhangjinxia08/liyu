@@ -14,18 +14,11 @@ var http = require('http');
 // 修改接口
 var port = normalizePort(process.env.PORT || '80');
 app.set('port', port);
-<<<<<<< HEAD
-app.set('host', '172.16.5.109')
-    /**
-     * Create HTTP server.
-     */
-=======
-// app.set('172.16.5.103')
+app.set('172.16.5.101')
 
 /**
  * Create HTTP server.
  */
->>>>>>> 9741dd429dedc5cb2cd05330c49456435c486c99
 
 var server = http.createServer(app);
 
