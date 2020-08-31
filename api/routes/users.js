@@ -7,11 +7,5 @@ router.all('*', function(req, res, next) {
     next()
 })
 
-router.use(bodyParser.urlencoded({ extended: false }));
-router.use(bodyParser.json());
-/* GET users listing. */
-// router.get('/', function(req, res, next) {
-//   res.send('respond with a resource');
-// });
 
 module.exports = router;
