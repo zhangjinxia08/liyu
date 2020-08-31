@@ -10,6 +10,7 @@ router.all('*',function(req,res,next) {
 // router.get('/', function(req, res, next) {
 //   res.send('respond with a resource');
 // });
+// 头部接口
 router.get('/header', function (req, res,next) {
   var sql = `select * from header`
   connection.query(sql,function(err,data){
@@ -21,6 +22,7 @@ router.get('/header', function (req, res,next) {
     }
   })
 })
+// 图片请求接口
 router.get('/pic', function (req, res,next) {
   var sql = `select * from pic`;
   connection.query(sql,function(err,data){
