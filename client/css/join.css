@@ -1,0 +1,515 @@
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.banner {
+    display: block;
+    /* margin-top: 90px; */
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    transform: scale(1,1);
+    animation: bannerMove 10s infinite alternate;
+}
+
+@keyframes bannerMove {
+    from {
+        transform: scale(1,1);
+    }
+    to {
+        transform: scale(1.1,1.1);
+    }
+}
+
+.contact_tit {
+    position: absolute;
+    top: 190.5px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.contact_tit h3 {
+    font-size: 28px;
+    color: rgba(27, 98, 183, 1);
+    font-weight: 400;
+}
+
+.contact_tit p {
+    font-size: 14px;
+    margin-top: 15px;
+    color: rgba(27, 98, 183, 1);
+}
+
+.tabs {
+    background-color: #f2f2f2;
+    text-align: center;
+    overflow: hidden;
+}
+
+.tabs li {
+    display: inline-block;
+}
+
+.tab_item a {
+    padding: 20px 0;
+    padding-bottom: 17px;
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+    font-size: 16px;
+    color: #000000;
+}
+
+.tabs span {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.tab_item:hover .tabhover {
+    color: #337ab7;
+    font-weight: bold;
+    border-bottom: 3px solid #337ab7;
+}
+
+.tab_item .current {
+    color: #337ab7;
+    font-weight: bold;
+    border-bottom: 3px solid #337ab7;
+}
+
+.crumbs {
+    width: 1238.66px;
+    margin: 0 auto;
+    line-height: 44px;
+    color: #aeaeae;
+    font-size: 14px;
+}
+
+.crumbs img {
+    display: inline-block;
+    width: 14px;
+    vertical-align: -2px;
+    margin-right: 5px
+}
+
+.crumbs a {
+    color: #aeaeae;
+    margin: 0 5px;
+}
+
+/* contact */
+.contact {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.contact1 {
+    width: 1238.66px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 1150px;
+    overflow: hidden;
+}
+
+.demand_tit {
+    margin: 40px 0;
+    text-align: center;
+    color: rgba(27, 98, 183, 1);
+}
+
+.demand_tit h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.detail_intro {
+    width: 100%;
+}
+
+.intro_item {
+    padding: 15px 20px;
+    border-left: 3px solid rgba(27, 98, 183, 1);
+    background-color: #fff;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 50px;
+}
+
+.join_sel {
+    height: auto;
+}
+
+.job_tit {
+    font-size: 18px;
+    color: rgba(27, 98, 183, 1);
+    margin-bottom: 12px;
+}
+
+.tit {
+    display: inline-block;
+}
+
+.cur_time {
+    color: rgba(102, 102, 102, .5);
+    font-size: 12px;
+    float: right;
+}
+
+.desc {
+    color: rgba(102, 102, 102, 1);
+    font-size: 12px;
+}
+
+.desc img {
+    height: 16px;
+    width: auto;
+    cursor: pointer;
+    float: right;
+}
+
+.job_info {
+    padding: 20px 0;
+    /* display: none; */
+}
+
+.duty, .require {
+    font-size: 16px;
+    color: rgba(27, 98, 183, 1);
+    margin-bottom: 12px;
+    margin-top: 6px;
+}
+
+.duty_list li, .require_list li{
+    color: rgba(102, 102, 102, 1);
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.require {
+    margin-top: 48px;
+}
+
+.email_tit {
+    color: rgba(102, 102, 102, 1);
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 48px;
+}
+
+.email {
+    color: red;
+    font-size: 12px;
+}
+
+.apply {
+    float: right;
+    color: #fff;
+    background-color: rgba(27, 98, 183, .65);
+    line-height: 44px;
+    width: 140px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.apply:hover {
+    background-color: rgba(27, 98, 183, 1);
+}
+
+.require_list li>p {
+    line-height: 2em;
+    margin-bottom: 15px;
+}
+
+.require_list li>p:first-child {
+    font-size: 16px;
+}
+
+.intro_list li:last-child .job_info>.require{
+    margin-top: 0;
+}
+
+/* 分页 */
+.page {
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    height: 30px;
+}
+
+.page a {
+    width: 30px;
+    background-color: rgba(217, 217, 217, 1);
+    color: #ffffff;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.page img {
+    width: 30px;
+    height: 30px;
+    margin-top: -3px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.page .page_num_cur {
+    line-height: 30px;
+    background-color: rgba(27, 98, 183, 1);
+}
+
+
+.produre_tit {
+    margin: 40px 0;
+    text-align: center;
+    font-size: 1.8rem;
+    color: rgba(27, 98, 183, 1);
+}
+
+
+.flow_path li {
+    width: 20%;
+    float: left;
+}
+
+.flow_path li>span {
+    width: 80px;
+    height: 80px;
+    display: block;
+    border-radius: 50%;
+    background-color: rgba(27, 98, 183, 1);
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.flow_path li>span img {
+    height: 50px;
+    width: auto;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.flow_path .line {
+    position: absolute;
+    background-color: rgba(27, 98, 183, 1);
+    width: 1px;
+    height: 30px;
+    top: 80px;
+    left: 39px;
+}
+
+.flow_intro {
+    margin-top: 30px;
+    position: relative;
+}
+
+.flow_intro>li {
+    width: 20%;
+    text-align: center;
+    float: left;
+}
+
+.flow_intro>li span:first-child {
+    width: 26px;
+    line-height: 26px;
+    display: block;
+    border-radius: 50%;
+    background-color: rgba(27, 98, 183, 1);
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.flow_intro>li span:last-child {
+    color: rgba(102, 102, 102, 1);
+    font-size: 14px;
+}
+
+.flow_intro>li:last-child {
+    position: absolute;
+    background-color: rgba(27, 98, 183, 1);
+    width: 100%;
+    left: 0;
+    top: 12px;
+    height: 2px;
+    z-index: -1;
+}
+
+.know_tit {
+    margin: 40px 0;
+    text-align: center;
+    font-size: 18px;
+    color: rgba(27, 98, 183, 1);
+}
+
+.know_info p {
+    color: rgba(102, 102, 102, 1);
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.know_info p:last-child {
+    color: rgba(206, 33, 40, 1);
+}
+
+/* 应聘申请 */
+.apply_container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.apply_form {
+    width: 634.344px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 7%;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(27, 98, 183, 1);
+    padding: 40px 8.333333%;
+}
+
+.apply_form .close{
+    line-height: 38px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 26px;
+    cursor: pointer;
+    color: rgba(27, 98, 183, 1);
+    font-weight: 100;
+    border: rgba(27, 98, 183, 1) 2px solid;
+    width: 38px;
+    text-align: center;
+    height: 38px;
+    border-radius: 19px;
+}
+
+.apply_tit {
+    font-size: 26px;
+    padding: 0 0 20px 0;
+    color: rgba(27, 98, 183, 1);
+    font-weight: bold;
+}
+
+.apply_form input {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 44px;
+    border: 1px solid #dedede;
+    background: #fff;
+    padding: 0 15px;
+    outline: 0;
+}
+
+.apply_form input::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.upfile .remuse_load {
+    width: 80%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.upfile {
+    width: 666.34px;
+    position: relative;
+}
+
+.upfile .load {
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin-bottom: 15px;
+    line-height: 42px;
+    border: 1px solid #dedede;
+    border-left: 0;
+    background: #fff;
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.upfile input:last-child {
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    height: 44px;
+}
+
+.apply_form .txt {
+    color: red;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.yzcode {
+    padding-right: 120px;
+}
+
+.btn {
+    display: block;
+    line-height: 44px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 1.6rem;
+    background-color: rgba(27, 98, 183, 1);
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-size: 16px;
+}
+
+.ver_code {
+    position: relative;
+}
+
+
+.verify {
+    height: 45px;
+    width: 116px;
+    position: absolute;
+    top: 0;
+    right: -32px;
+}
+
+.v_txt {
+    display: none;
+}
+
+#verifyCanvas {
+    height: 45px;
+    width: 116px;
+}

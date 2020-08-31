@@ -1,0 +1,156 @@
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contact3 {
+    width: 921.5px;
+    margin-left: 333px;
+    margin-bottom: 40px;
+    margin-top: 1150px;
+    position: relative;
+    z-index: 3;
+}
+
+.left_brief, .right_code {
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.right_code {
+    float: right;
+}
+
+.left_brief p {
+    color: rgba(102, 102, 102, 1);
+    line-height: 22px;
+    font-size: 12px;
+}
+
+.left_brief p:first-child {
+    color: rgba(27, 98, 183, 1);
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding-left: 8px;
+    border-left: 2px solid rgba(27, 98, 183, 1);
+}
+
+.phoneweb, .wxcode {
+    float: right;
+    margin-left: 8%;
+    min-height: 120px
+}
+
+.right_code p {
+    width: 16px;
+    display: inline-block;
+    font-size: 12px;
+    color: rgba(102, 102, 102, 1);
+    margin-top: 21px;
+}
+
+.wxcode p {
+    margin-top: 15px;
+}
+
+.phoneweb p, .wxcode p {
+    float: left;
+}
+
+.right_code img {
+    width: 110px;
+    margin-left: 30px;
+}
+
+.cont_item{
+    width: 33.33333333%;
+    float: left;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.cont_item1 {
+    width: 100%;
+    padding: 0;
+}
+
+.cont_item input {
+    height: 44px;
+    width: 100%;
+    border: 1px solid rgba(102, 102, 102, 0.45);
+    padding: 0 15px;
+    color: rgba(102, 102, 102, 1);
+    margin-top: 15px;
+    font-size: 14px;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.cont_item input::placeholder {
+    color: rgba(102, 102, 102, 1);
+}
+
+.cont_item:first-child {
+    padding-left: 0;
+}
+
+.cont_item:nth-child(3) {
+    padding-right: 0;
+}
+
+.cont_item textarea {
+    margin-top: 15px;
+    width: 100%;
+    padding: 20px 15px;
+    max-width: 100%;
+    color: rgba(102, 102, 102, 1);
+    display: block;
+    box-sizing: border-box;
+    outline: 0;
+    font-size: 14px;
+}
+
+.cont_item2 {
+    padding: 0;
+    width: 41.66666667%;
+    position: relative;
+}
+
+.gverify {
+    position: absolute;
+    right: 1px;
+    top: 16px;
+    height: 42px;
+    width: auto;
+}
+
+#v_container {
+    height: 42px;
+}
+
+#verifyCanvas {
+    height: 42px;
+}
+
+.cont_item3 {
+    width: 16.66666667%;
+    padding-left: 30px;
+    box-sizing: content-box;
+}
+
+.gchange {
+    line-height: 44px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #fff;
+    margin-top: 15px;
+    padding: 0;
+    border: 0;
+    background: linear-gradient(to right, rgba(27, 98, 183, 1) , rgba(206, 34, 40, 1));
+    outline: 0;
+    cursor: pointer;
+}
