@@ -87,6 +87,9 @@ fetch('http://172.16.5.101/users/header', {
     }else if(str.indexOf('ser') !== -1){
         $('.header-title6').css('color','#1b62b7').parent().addClass('active')
         slidebarLeft()
+    }else{
+        $('.header-title7').css('color','#1b62b7').parent().addClass('active')
+        slidebarLeft()
     }
 
 })

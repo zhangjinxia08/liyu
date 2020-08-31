@@ -46,6 +46,9 @@ $('.header-search').on('click',function(){
 })
 
 // 跳转页面
+$('.header-login').on('click',function(){
+    location.href = './login.html'
+})
 let $headerNavlist = $('.header-navlist')
 $headerNavlist.on('click','.header-title1',function(){
     location.href = './index.html'
@@ -64,6 +67,9 @@ $headerNavlist.on('click','.header-title5',function(){
 })
 $headerNavlist.on('click','.header-title6',function(){
     location.href = './service.html'
+})
+$headerNavlist.on('click','.header-title7',function(){
+    location.href = './join.html'
 })
 
 $headerNavlist.on('click','.header-title8',function(){
@@ -138,4 +144,14 @@ $headerNavlist.on('click','.header-title29',function(){
 })
 $headerNavlist.on('click','.header-title30',function(){
     location.href = './ser-ziliao.html'
+})
+
+$headerNavlist.on('click','.header-title31',function(){
+    location.href = './join.html'
+})
+$headerNavlist.on('click','.header-title32',function(){
+    location.href = './website.html'
+})
+$headerNavlist.on('click','.header-title33',function(){
+    location.href = './contact.html'
 })
