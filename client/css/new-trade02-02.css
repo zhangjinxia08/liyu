@@ -1,0 +1,31 @@
+.trade-energy-img img {
+    height: 923px;
+    width: 1239px;
+}
+
+.new-trade-text-a {
+    text-align: center;
+}
+
+.new-trade-text-a strong,
+.new-trade-text-b strong {
+    font-weight: 700;
+}
+
+.new-heart .new-trade-text-b {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.new-trade-text-e {
+    text-indent: 35px;
+}
+
+.new-trade-text-c {
+    position: relative;
+    left: -28px;
+}
+
+.new-heart .new-trade-text-d {
+    text-align: right;
+}
