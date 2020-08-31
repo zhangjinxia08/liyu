@@ -1,7 +1,7 @@
 // var mg = $('.about02 ul').css('marginLeft')
-$(".tabs li ").on('mouseover', function() {
-    $(this).addClass('active').siblings('.active').removeClass('active')
-})
+// $(".tabs li ").on('mouseover', function() {
+//     $(this).addClass('active').siblings('.active').removeClass('active')
+// })
 var count = 0
 $('.about02 .right').on('click', $('.about02 ul'), function() {
     console.log(111)
