@@ -51,7 +51,7 @@ fetch('http://172.16.5.103/users/header', {
     $('.footer-list3').html(footerNews)
     $('.footer-list4').html(footerProduct)
     $('.footer-list5').html(footerCase)
-    $('.footer-list6').ht3l(footerServer)
+    $('.footer-list6').html(footerServer)
     $('.footer-list7').html(footerContact)
 
 })
