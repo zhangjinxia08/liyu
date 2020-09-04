@@ -1,98 +1,131 @@
-
-.footer{
+.footer {
     background-color: rgba(73, 138, 212, 1);
 }
-.footer-content{
+
+.footer-content {
     width: 1269px;
     margin: 0 auto;
 }
-.footer-top{
+
+.footer-top {
     padding: 50px 0 46px;
     border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
-.footer-left,.footer-right{
+
+.footer-left,
+.footer-right {
     float: left;
 }
+
+
 /* 页尾导航 */
-.footer-item{
+
+.footer-item {
     float: left;
     width: 140px;
 }
-.footer-item a{
+
+.footer-item a {
     display: block;
     font-size: 16px;
     color: rgba(227, 227, 227, 1);
     margin-bottom: 26px
 }
-.footer-pulldown{
+
+.footer-pulldown {
     cursor: pointer;
     font-size: 14px;
     color: rgba(227, 227, 227, .8);
     margin-bottom: 15px
 }
-.footer-pulldown:hover{
-    
+
+.footer-pulldown:hover {
     color: rgba(227, 227, 227, 1);
 }
+
+
 /* 联系方式 */
-.footer-website,.footer-public{
+
+.footer-website,
+.footer-public {
     float: left;
     padding-left: 40px;
 }
-.footer-website img,.footer-public img{
+
+.footer-website img,
+.footer-public img {
     margin-bottom: 17px;
 }
-.footer-website p,.footer-public p{
+
+.footer-website p,
+.footer-public p {
     font-size: 14px;
     color: #fff;
     text-align: center;
 }
-.footer-contact{
+
+.footer-contact {
     margin-top: 32px;
     padding-left: 40px;
 }
-.footer-contact p{
+
+.footer-contact p {
     font-size: 14px;
     color: #fff;
 }
-.footer-contact p span{
+
+.footer-contact p span {
     font-size: 18px;
     font-weight: bold;
     color: rgba(255, 224, 77, 1);
 }
-.footer-contact p img{
+
+.footer-contact p img {
     /* float: left; */
     display: inline-block;
     vertical-align: middle;
     margin-right: 5px;
 }
-.footer-home,.footer-internation{
+
+.footer-home,
+.footer-internation {
     margin-top: 10px;
 }
+
+
 /* 版权，备案号 */
-.footer-bottom{
+
+.footer-bottom {
     padding: 10px 0;
 }
-.footer-copyright{
+
+.footer-copyright {
     float: left;
     /* vertical-align: middle; */
 }
-.footer-support{
+
+.footer-support {
     float: right;
 }
-.footer-copyright span{
+
+.footer-copyright span {
     font-size: 14px;
     color: rgba(227, 227, 227, .5);
 }
-.footer-statistic img{
+
+.footer-statistic img {
     /* float: right; */
     display: inline-block;
     vertical-align: middle;
 }
-.footer-record,.footer-support a{
+
+.footer-record,
+.footer-support a {
     font-size: 14px;
     color: #337ab7;
 }
-.footer-record:hover,.footer-support a:hover{
+
+.footer-record:hover,
+.footer-support a:hover {
     color: #23527c;
 }
