@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>力宇集团</title>
+    <link rel="shortcut icon" href="./images/favicon1.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header_content">
+            <div class="logo" id="logo"></div>
+            <div class="tit">
+                <p>企业成功、员工幸福、回报社会！</p>
+            </div>
+        </div>
+    </div>
+    <div class="liyu_login">
+        <div class="login_area">
+            <div class="account_area">
+                <div class="login_box">
+                    <div class="login_tit">
+                        <span class="account_tit current">账号密码登录</span>
+                        <span class="tel_tit">手机验证码</span>
+                    </div>
+                    <div class="account_form">
+                        <form action="">
+                            <div class="errmsg">
+                                <!-- <span class="err_tips err_tip1">请填写你的邮箱账号</span>
+                                <span class="err_tips err_tip2">请填写邮箱密码</span>
+                                <span class="err_tips err_tip3">你填写的账号或密码不正确，请再次尝试</span> -->
+                                <span class="err_tips"></span>
+                            </div>
+                            <div class="form_item acc_item">
+                                <input class="acc pl key" id="account" type="text" placeholder="账号">
+                                <span class="domain_play" title="@liyupower.com">@liyupower.com</span>
+                            </div>
+                            <div class="form_item">
+                                <input class="psw pl key" id="password" type="password" placeholder="密码">
+                            </div>
+                            <div class="auto_login">
+                                <input class="sub" type="checkbox" name="" id="auto">
+                                <label for="auto">5天内自动登录</label>
+                                <span class="auto_tips">为了你的帐号安全，请勿在网吧或公用电脑上使用此功能！</span>
+                            </div>
+                            <div class="submit_item">
+                                <input id="login_submit" type="submit" value="登录">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mobilePhone_form method">
+                        <form action="">
+                            <div class="form_item tel_item">
+                                <div class="select">
+                                    <input class="area_code" type="text" value="86">
+                                    <a class="telInput" href="">
+                                        <span class="telInput_icon"></span>
+                                    </a>
+                                    <div class="area_code_select isShow">
+                                        <ul class="area_code_list">
+                                            <!-- <li class="area_code_item">
+                                                <span class="selected"></span>
+                                                <span></span>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                                <input class="tel pl" id="tel" type="text" placeholder="输入手机号码">
+                                <span class="tel_tip"></span>
+                            </div>
+                            <div class="form_item identify">
+                                <input class="id_code pl" type="text" placeholder="输入验证码">
+                                <div class="gverify">
+                                    <div id="v_container">
+                                        <span class="v_txt">获取验证码</span>
+                                    </div>     
+                                </div>
+                                <span class="gver_tip"></span>
+                            </div>
+                            <div class="submit_item submit_item1">
+                                <input id="login_submit" type="submit" value="登录">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="login_link">
+                        <a href="https://exmail.qq.com/login">管理员登录</a>
+                        <a href="http://mail.liyupower.com/cgi-bin/readtemplate?check=false&t=biz_rf_portal#recovery">忘记密码？</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mid_line"></div>
+            <div class="code_area">
+                <div class="code_wrap">
+                    <span class="code_tit">微信扫码登录</span>
+                    <div class="code_box">
+                        <div class="code_img"></div>
+                        <div class="info">
+                            <p>请使用微信扫描二维码登录</p>
+                            <p>“腾讯企业邮箱”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="about">
+            <a href="./index.html">关于力宇</a>|<a href="./index.html">服务条款</a>
+        </p>
+        <p class="rights">© 1998 - 2020 Tencent Inc. All Rights Reserved</p>
+        <a href="">湘ICP备16003615号-1</a>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/areaCode.js"></script>
+    <script src="./js/gVerify.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>

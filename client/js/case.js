@@ -1,4 +1,4 @@
-fetch('http://172.16.5.102/users/pic', {
+fetch('http://172.16.5.103/users/casepic', {
     method: 'get'
 }).then(res => res.json()).then(res => {
     var banner = ''

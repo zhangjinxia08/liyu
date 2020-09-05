@@ -1,0 +1,43 @@
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contact2 {
+    width: 1238.66px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 1150px;
+    position: relative;
+    z-index: 3;
+}
+
+.comp_list li {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.comp_head {
+    color: rgba(27, 98, 183, 1);
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.comp_head img {
+    width: 14px;
+    height: auto;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.comp_list p {
+    color: rgba(102, 102, 102, 1);
+    line-height: 22px;
+    font-size: 12px;
+}
+
